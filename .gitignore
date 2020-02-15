@@ -131,3 +131,7 @@ dmypy.json
 #Settings
 APIInfo.txt
 config.py
+credentials.json
+settings.yaml
+videos/
+pics/
