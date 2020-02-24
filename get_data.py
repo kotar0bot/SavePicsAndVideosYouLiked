@@ -2,6 +2,7 @@ import json, config
 from requests_oauthlib import OAuth1Session
 import re
 import download
+import upload
 
 CONSUMER_KEY = config.CONSUMER_KEY
 CONSUMER_SECRET = config.CONSUMER_SECRET
@@ -45,3 +46,4 @@ def find_max_size(url): #Find the max size video.
     return x * y
 
 main()
+upload.upload_pics_videos()
