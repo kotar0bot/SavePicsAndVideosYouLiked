@@ -17,7 +17,7 @@ def upload_pics_videos():
       })
     f.SetContentFile(q)
     f.Upload()
-    print(f['title'], f['id'])
+    print("画像アップロード: {0} {1}".format(f['title'], f['id']).encode('cp932', 'ignore').decode('cp932'))
 
   for p in Path("videos").glob("*"):
     q = str(p)
@@ -28,4 +28,4 @@ def upload_pics_videos():
       })
     f.SetContentFile(q)
     f.Upload()
-    print(f['title'], f['id'])
+    print("動画アップロード: {0} {1}".format(f['title'], f['id']).encode('cp932', 'ignore').decode('cp932'))
